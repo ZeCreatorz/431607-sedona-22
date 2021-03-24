@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Pavel Dmitriev](https://up.htmlacademy.ru/adaptive/22/user/431607).
-* Наставник: `Неизвестно`.
+* Наставник: [Yury Zaytsev](https://htmlacademy.ru/profile/yuryzaytsev).
 
 ---
 
