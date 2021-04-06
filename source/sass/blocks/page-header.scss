@@ -1,0 +1,30 @@
+.page-header {
+  margin: 0;
+}
+
+.page-header__logo {
+  order: 2;
+  text-align: center;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+
+  height: 84px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    position: absolute;
+    width: 101px;
+    height: 84px;
+    left: 315px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    position: absolute;
+    width: 186px;
+    height: 96px;
+    left: 475px;
+  }
+}

@@ -1,0 +1,48 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.intro-form {
+  margin-bottom: 37px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.intro__title {
+  margin: 0;
+  margin-bottom: 27px;
+  padding: 0;
+  font-size: $font-size-large;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+@media (min-width: $desktop-width) {
+  .intro__title {
+    font-size: 26px;
+  }
+}
+
+.intro__subtitle {
+  margin: 0;
+  padding: 0;
+  line-height: 26px;
+  color: $darkgray;
+}
+
+.intro__text {
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+  color: #333333;
+}

@@ -1,0 +1,50 @@
+.features {
+  padding: 35px 35px 35px 70px;
+  text-align: left;
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    display: grid;
+    grid-template-columns: 33.33333333333333% 33.33333333333333% 33.33333333333333%;
+    max-width: 100%;
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 31px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .features__item--souvenirs {
+    order: 1;
+  }
+}
+
+.features__title {
+  display: inline-block;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  font-size: $font-size-large;
+  line-height: 26px;
+  font-weight: 700;
+  color: $black;
+}
+
+.features__text {
+  margin: 0;
+  padding: 0;
+  color: $darkgray;
+}
+
+.features__item {
+  background-color: $white;
+}
+
+.features__item--house {
+  margin-bottom: 26px;
+}
+
+.features__item--souvenirs {
+  margin-bottom: 26px;
+}
