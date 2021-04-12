@@ -131,6 +131,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .feedback__fieldset--contact .feedback__item {
+    width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
   .feedback__fieldset--contact .field-text__label-hide {
     display: none;
   }
