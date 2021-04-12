@@ -1,6 +1,7 @@
 .intro {
   margin: 0 auto;
-  width: 265px;
+  margin-bottom: 45px;
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -8,30 +9,30 @@
   margin-bottom: 37px;
 }
 
-
-@media (min-width: $tablet-width) {
-  .intro {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 .intro__title {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
   font-size: $font-size-large;
   line-height: 26px;
   font-weight: 700;
 }
 
-@media (min-width: $desktop-width) {
-  .intro__title {
-    font-size: 26px;
+@media (min-width: $tablet-width) {
+  .intro__title--photo {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro__title--form {
+    font-size: 30px;
   }
 }
 
 .intro__subtitle {
   margin: 0;
+  margin-top: 30px;
   padding: 0;
   line-height: 26px;
   color: $darkgray;
