@@ -3,7 +3,20 @@
 }
 
 .social__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
-  padding: 0;
+  padding-left: 84px;
+  padding-right: 85px;
   list-style: none;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
 }

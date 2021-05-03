@@ -25,6 +25,29 @@
   text-transform: uppercase;
 }
 
+.site-list__link:hover {
+  background-color: #669ec0;
+}
+
+.site-list__link:active {
+  background-color: #5496bd;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__link:hover {
+    color: #81b3d2;
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__link:active {
+    color: #000000;
+    opacity: 0.3;
+    background-color: #ffffff;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .site-list__link {
     font-size: 14px;

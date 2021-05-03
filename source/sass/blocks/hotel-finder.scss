@@ -25,6 +25,14 @@
   min-width: 280px;
 }
 
+.hotel-finder__button:hover {
+  background-color: #669ec0;
+}
+
+.hotel-finder__button:active {
+  background-color: #5496bd;
+}
+
 @media (min-width: $tablet-width) {
   .hotel-finder__button {
     min-width: 458px;
