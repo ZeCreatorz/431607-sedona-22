@@ -19,7 +19,7 @@
   background-color: $white;
 }
 
-.advantages__title::before {
+.advantages__title::after {
   display: block;
   counter-increment: advantages;
   content: "—№ " counter(advantages) "—";
@@ -85,7 +85,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages__title::before {
+  .advantages__title::after {
     display: block;
     counter-increment: advantages;
     content: "—№ " counter(advantages) "—";

@@ -42,9 +42,51 @@
 }
 
 .features__item--house {
+  position: relative;
   margin-bottom: 26px;
 }
 
+.features__item--house::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -45px;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icon-housemob.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .features__item--souvenirs {
+  position: relative;
   margin-bottom: 26px;
+}
+
+.features__item--souvenirs::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -45px;
+  width: 32px;
+  height: 38px;
+  background-image: url("../img/icon-giftmob.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features__item--food {
+  position: relative;
+}
+
+.features__item--food::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -50px;
+  width: 40px;
+  height: 35px;
+  background-image: url("../img/icon-burgermob.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
