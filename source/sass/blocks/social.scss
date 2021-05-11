@@ -12,6 +12,12 @@
   list-style: none;
 }
 
+@media (min-width: $tablet-width) {
+  .social__list {
+    padding-left: 74px;
+  }
+}
+
 .social__link {
   display: flex;
   justify-content: center;
@@ -19,4 +25,16 @@
   background-color: #81b3d2;
   width: 46px;
   height: 48px;
+}
+
+@media (min-width: $tablet-width) {
+  .social__link--twitter {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__link--facebook {
+    margin-right: 6px;
+  }
 }

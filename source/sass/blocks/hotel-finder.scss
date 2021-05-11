@@ -13,6 +13,14 @@
   color: $black;
 }
 
+@media (min-width: $tablet-width) {
+  .hotel-finder__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+}
+
 .hotel-finder__subtitle {
   margin: 0;
   margin-bottom: 37px;

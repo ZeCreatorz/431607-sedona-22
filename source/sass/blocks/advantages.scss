@@ -1,9 +1,29 @@
 .advantages {
+  position: relative;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
   counter-reset: advantages;
   list-style: none;
+}
+
+.advantages__link {
+  display: block;
+}
+
+.advantages::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 320px;
+  height: 37px;
+  background-image: url("../img/mobtri.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .advantages::before {
+    display: none;
+  }
 }
 
 .advantages__item {
@@ -23,6 +43,10 @@
   display: block;
   counter-increment: advantages;
   content: "—№ " counter(advantages) "—";
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: $font-size-base;
+  font-weight: 400;
 }
 
 @media (min-width: $tablet-width) {
@@ -81,6 +105,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     counter-reset: advantages;
+    margin-bottom: 55px;
   }
 }
 
@@ -114,7 +139,7 @@
 
 .advantages__areatitle-wrapper {
   padding-top: 55px;
-  padding-bottom: 39px;
+  padding-bottom: 10px;
 }
 
 .advantages__text-wrapper {
@@ -139,11 +164,25 @@
 
 .advantages__title {
   display: inline-block;
-  margin-top: 26px;
+  margin-top: 10px;
   vertical-align: middle;
   font-size: $font-size-large;
   line-height: 26px;
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    font-size: $font-size-heading;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item--gray {
+    padding-top: 30px;
+    padding-bottom: 73px;
+  }
 }
 
 .advantages__text {

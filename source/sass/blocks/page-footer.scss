@@ -17,16 +17,29 @@
   color: $black;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer__title {
+    margin-right: 12px;
+  }
+}
+
 .page-footer__copyright {
   margin: 0;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer__copyright {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: baseline;
     padding: 0 60px;
   }
 }

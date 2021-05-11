@@ -1,5 +1,5 @@
 .features {
-  padding: 35px 35px 35px 70px;
+  padding: 35px 35px 20px 70px;
   text-align: left;
   list-style: none;
 }
@@ -10,8 +10,9 @@
     grid-template-columns: 33.33333333333333% 33.33333333333333% 33.33333333333333%;
     max-width: 100%;
     text-align: center;
-    padding-left: 45px;
-    padding-right: 31px;
+    margin-bottom: 40px;
+    padding-left: 1px;
+    padding-right: 1px;
   }
 }
 
@@ -22,6 +23,7 @@
 }
 
 .features__title {
+  position: relative;
   display: inline-block;
   margin-bottom: 20px;
   vertical-align: middle;
@@ -29,6 +31,14 @@
   line-height: 26px;
   font-weight: 700;
   color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .features__title {
+    margin-top: 120px;
+    font-size: $font-size-heading;
+    font-weight: 700;
+  }
 }
 
 .features__text {
@@ -58,6 +68,21 @@
   background-position: 0 0;
 }
 
+@media (min-width: $tablet-width) {
+  .features__item--house::before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%);
+    top: 25px;
+    left: 50%;
+    width: 75px;
+    height: 72px;
+    background-image: url("../img/icon-housetablet.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
 .features__item--souvenirs {
   position: relative;
   margin-bottom: 26px;
@@ -75,6 +100,21 @@
   background-position: 0 0;
 }
 
+@media (min-width: $tablet-width) {
+  .features__item--souvenirs::before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%);
+    top: 25px;
+    left: 50%;
+    width: 64px;
+    height: 75px;
+    background-image: url("../img/icon-gifttab.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
 .features__item--food {
   position: relative;
 }
@@ -89,4 +129,19 @@
   background-image: url("../img/icon-burgermob.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+@media (min-width: $tablet-width) {
+  .features__item--food::before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%);
+    top: 25px;
+    left: 50%;
+    width: 76px;
+    height: 68px;
+    background-image: url("../img/icon-burgertab.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
 }
