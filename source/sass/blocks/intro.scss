@@ -1,6 +1,6 @@
 .intro {
   margin: 0 auto;
-  margin-bottom: 55px;
+  margin-bottom: 12px;
   padding: 0 20px;
   text-align: center;
 }
@@ -16,6 +16,20 @@
   font-size: $font-size-large;
   line-height: 26px;
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    padding: 0 140px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    padding: 0 295px;
+    margin-bottom: 42px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -45,7 +59,7 @@
 
 .intro__subtitle {
   margin: 0;
-  margin-top: 35px;
+  margin-top: 30px;
   padding: 0;
   line-height: 26px;
   color: $darkgray;
