@@ -3,20 +3,58 @@
   margin-bottom: 49px;
 }
 
+@media (min-width: $tablet-width) {
+  .hotel-finder {
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hotel-finder {
+    margin-bottom: 65px;
+  }
+}
+
 .hotel-finder__title {
   margin: 0;
-  margin-bottom: 10px;
-  padding: 0;
+  padding-bottom: 18px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: $black;
 }
 
+@media (min-width: $tablet-width) {
+  .hotel-finder__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hotel-finder__subtitle br {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hotel-finder .hotel-finder__subtitle {
+    padding: 0 400px;
+    padding-bottom: 45px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width -1) {
+  .hotel-finder .hotel-finder__subtitle {
+    padding: 0 186px;
+    padding-bottom: 38px;
+  }
+}
+
 .hotel-finder__subtitle {
   margin: 0;
-  margin-bottom: 37px;
-  padding: 0;
+  padding-bottom: 28px;
   line-height: 24px;
   color: $darkgray;
 }

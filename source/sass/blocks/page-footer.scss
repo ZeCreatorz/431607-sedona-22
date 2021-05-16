@@ -4,7 +4,7 @@
 
 .page-footer__hashtag {
   display: inline-block;
-  margin-bottom: 38px;
+  margin-bottom: 32px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -13,20 +13,36 @@
 }
 
 .page-footer__title {
+  margin-right: 11px;
   line-height: 26px;
   color: $black;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer__title {
+    margin-right: 12px;
+  }
+}
+
 .page-footer__copyright {
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer__copyright {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .page-footer {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: baseline;
     padding: 0 60px;
   }
 }

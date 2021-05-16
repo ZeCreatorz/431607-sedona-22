@@ -5,6 +5,7 @@
 .page-header__logo {
   order: 2;
   text-align: center;
+  z-index: 1;
 
   height: 84px;
 }
@@ -13,8 +14,8 @@
   .page-header__logo {
     position: absolute;
     left: 50%;
-    top: 105%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    transform: translateX(-50%);
     width: 101px;
     height: 84px;
   }
@@ -24,8 +25,8 @@
   .page-header__logo {
     position: absolute;
     left: 50%;
-    top: 121%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    transform: translateX(-50%);
     width: 186px;
     height: 96px;
   }

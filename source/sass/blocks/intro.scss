@@ -1,6 +1,6 @@
 .intro {
   margin: 0 auto;
-  margin-bottom: 45px;
+  margin-bottom: 12px;
   padding: 0 20px;
   text-align: center;
 }
@@ -16,6 +16,33 @@
   font-size: $font-size-large;
   line-height: 26px;
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    padding: 0 140px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    padding: 0 295px;
+    margin-bottom: 42px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro__title {
+    font-size: $font-size-heading;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro__title br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
