@@ -65,6 +65,10 @@
   }
 }
 
+.greeting__item-text {
+  margin-top: -12px;
+}
+
 @media (min-width: $tablet-width) {
   .greeting__item-text {
     margin-top: 75px;
@@ -81,7 +85,13 @@
 }
 
 .greeting--inner-page {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  position: relative;
+  display: flex;
+  margin: 0;
+  margin-top: -30px;
+  margin-bottom: 25px;
+  background-image: url("../img/Back-mobcatalog.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: bottom;
+  height: 157px;
 }

@@ -5,6 +5,7 @@
   padding: 0;
   counter-reset: advantages;
   list-style: none;
+  background-color: #eeeeee;
 }
 
 .advantages__link {
@@ -27,8 +28,13 @@
   }
 }
 
-.advantages__item {
-  background-color: #ededed;
+.advantages__item--gray {
+  margin: 0 20px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.advantages__item--gray:last-of-type {
+  border-bottom: none;
 }
 
 .advantages__item:nth-last-child(-n + 3) {
@@ -276,9 +282,8 @@
 }
 
 .advantages__title {
-  display: inline-block;
+  display: block;
   margin-top: 9px;
-  vertical-align: middle;
   font-size: $font-size-large;
   line-height: 26px;
   font-weight: 700;
